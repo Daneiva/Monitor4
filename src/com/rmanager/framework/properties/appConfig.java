@@ -13,7 +13,7 @@ public class appConfig {
 	public appConfig(){
 		properties = new Properties();		
 			try {		 
-				propertyFile = new FileInputStream("rmanager.properties");
+				propertyFile = new FileInputStream("config/rmanager.properties");
 				properties.load(propertyFile);		 
 				} 
 			catch (IOException ex) {
@@ -31,14 +31,20 @@ public class appConfig {
 	}
 }
 	
-	public String getBaseURL(){
-		return properties.getProperty("urlRMApp");
+	public String getUrlAdmin(){
+		return properties.getProperty("adminUrl");
+	}
+	public String getUrlTablet(){
+		return properties.getProperty("tabletURl");
 	}
 	public String getUsername(){
 		return properties.getProperty("user");	
 	}
 	public String getPasseword(){
 		return properties.getProperty("password");	
+	}
+	public String getPathChromeNavigator(){
+		return properties.getProperty("crhomepathnavigator");
 	}
 }
 
