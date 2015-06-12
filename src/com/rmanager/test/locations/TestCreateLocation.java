@@ -18,6 +18,13 @@ import com.rmanager.framework.pages.admin.locations.LocationPage;
 import com.rmanager.framework.pages.admin.login.LoginPage;
 import com.rmanager.framework.properties.appConfig;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
 public class TestCreateLocation {
 	 private WebDriver driver;	  
 	  private boolean acceptNextAlert = true;
@@ -37,17 +44,25 @@ public class TestCreateLocation {
   @Test
   public void CreateLocation()throws InterruptedException {
 	  
-	  String nameLocation = "Namelocation22";
-	  String displayNameLocation = "displayNamelocation22";
-	  String descriptionLocation = "descriptionNamelocation22";	 
+	  Logger logger=Logger.getLogger("TestCreateLocation");
+	  PropertyConfigurator.configure("Log4j.properties");
+	  
+	  
+	  String nameLocation = "Namelocation42";
+	  String displayNameLocation = "displayNamelocation42";
+	  String descriptionLocation = "descriptionNamelocation42";	 
 	  
 	  driver.get(PropertyAppConfig.getUrlAdmin());
+	  logger.info("Browser Opened");
 	  LoginPage loginPage = new LoginPage(driver);
+	  logger.info("LoginPage Opened");
 	  HomePage homePage = loginPage.clickLoginButton();
+	  
 	  LocationPage locationPage= homePage.clickLocationButton();
 	  AddLocationTab locationTab = locationPage.clickAddLocationButton();
 	  
 	  /*Steps*/	 
+	 
 	  locationTab.setNameLocation(nameLocation);
 	  locationTab.setNameLocation(nameLocation);
 	  locationTab.setDisplayNameLocation(displayNameLocation);	  

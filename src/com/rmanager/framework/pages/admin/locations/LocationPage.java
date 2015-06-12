@@ -29,11 +29,11 @@ public class LocationPage {
 		int lastPosition = (((driver.findElements(lastLocationInList).size())));         
 	    driver.findElement(By.xpath("//div[@id='locationGrid']/div[2]/div/div["+lastPosition+"]/div[2]/div[2]/div")).click();	    	    
 	}
-	public AddlocationTab clickRemoveButton(){
+	/*public RemovePageLocation clickRemoveButton(){
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[2]")));
 	    driver.findElement(By.xpath("//button[2]")).click();
-	    
-	}
+	    return new RemovePageLocation(driver);
+	}*/
 	public AddLocationTab clickAddLocationButton(){
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(AddLocationButton));
 		driver.findElement(AddLocationButton).click();
