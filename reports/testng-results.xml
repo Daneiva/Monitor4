@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15031" started-at="2015-06-12T23:28:34Z" finished-at="2015-06-12T23:28:49Z">
+  <suite name="Default suite" duration-ms="23434" started-at="2015-06-15T23:42:14Z" finished-at="2015-06-15T23:42:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15031" started-at="2015-06-12T23:28:34Z" finished-at="2015-06-12T23:28:49Z">
+    <test name="Default test" duration-ms="23434" started-at="2015-06-15T23:42:14Z" finished-at="2015-06-15T23:42:38Z">
       <class name="com.rmanager.test.locations.TestCreateLocation">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@c83cfd]" name="setUp" is-config="true" duration-ms="4406" started-at="2015-06-12T19:28:34Z" finished-at="2015-06-12T19:28:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@148ccb8]" name="setUp" is-config="true" duration-ms="5701" started-at="2015-06-15T19:42:14Z" finished-at="2015-06-15T19:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CreateLocation()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@c83cfd]" name="CreateLocation" duration-ms="9338" started-at="2015-06-12T19:28:38Z" finished-at="2015-06-12T19:28:48Z">
+        <test-method status="PASS" signature="CreateLocation()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@148ccb8]" name="CreateLocation" duration-ms="11851" started-at="2015-06-15T19:42:20Z" finished-at="2015-06-15T19:42:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateLocation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@c83cfd]" name="tearDown" is-config="true" duration-ms="1272" started-at="2015-06-12T19:28:48Z" finished-at="2015-06-12T19:28:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rmanager.test.locations.TestCreateLocation@148ccb8]" name="tearDown" is-config="true" duration-ms="5862" started-at="2015-06-15T19:42:32Z" finished-at="2015-06-15T19:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

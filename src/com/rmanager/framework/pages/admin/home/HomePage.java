@@ -5,16 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.rmanager.framework.models.admin.locations.Location;
-import com.rmanager.framework.models.common.MainMenu;
+import com.rmanager.framework.models.common.HomePageModel;
 import com.rmanager.framework.pages.admin.locations.*;
 
 public class HomePage {
 
 	WebDriver driver;
 
-	By LocationButton = MainMenu.LOCATION_BUTTON;
-	By ResourcesButton = MainMenu.RESOURCES_BUTTON;
+	By LocationButton = HomePageModel.LOCATION_BUTTON;
+	By ResourcesButton = HomePageModel.RESOURCES_BUTTON;
 	
 	public HomePage(WebDriver driver){
 		this.driver =driver;

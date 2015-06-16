@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Test Suite RMApp">
+<suite name="Test Suite: Locations">
 
 <listeners>
 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<listener class-name="com.rmanager.framework.common.Listener"></listener>
 </listeners>
 
    <test name="Verify created location">
     <classes>
+
       <class name="com.rmanager.test.admin.VerifyAccessLoginPage" />
+      <class name="com.rmanager.test.locations.TestCreateLocation"/>
     </classes>
   </test>
   

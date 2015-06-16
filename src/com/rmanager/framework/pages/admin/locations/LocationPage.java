@@ -8,18 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.rmanager.framework.models.admin.locations.AddLocationInfo;
-import com.rmanager.framework.models.admin.locations.Location;
-import com.rmanager.framework.pages.admin.locations.*;
+import com.rmanager.framework.models.admin.locations.AddLocationInfoModel;
+import com.rmanager.framework.models.admin.locations.LocationModel;
 
 public class LocationPage {
 	
 	WebDriver driver;
 	
-	By AddLocationButton = Location.ADD_LOCATION_BUTTON;
-	By ListLocations = Location.LIST_LOCATIONS;
-	By CustonNameInList = Location.CUSTOM_NAME_IN_LIST_LOCATION;
-	By lastLocationInList = AddLocationInfo.LAST_POSITION_LIST_LOCATIONS;
+	By AddLocationButton = LocationModel.ADD_LOCATION_BUTTON;
+	By ListLocations = LocationModel.LIST_LOCATIONS;
+	By CustonNameInList = LocationModel.CUSTOM_NAME_IN_LIST_LOCATION;
+	By lastLocationInList = AddLocationInfoModel.LAST_POSITION_LIST_LOCATIONS;
+	
 	
 	public LocationPage(WebDriver driver){
 		this.driver = driver;
@@ -27,13 +27,13 @@ public class LocationPage {
 	
 	public void CheckLocationFound(){
 		int lastPosition = (((driver.findElements(lastLocationInList).size())));         
-	    driver.findElement(By.xpath("//div[@id='locationGrid']/div[2]/div/div["+lastPosition+"]/div[2]/div[2]/div")).click();	    	    
+		driver.findElement(By.xpath("//div[@id='locationGrid']/div[2]/div/div["+lastPosition+"]/div[2]/div[2]/div")).click();	    	    
 	}
-	/*public RemovePageLocation clickRemoveButton(){
+	public RemoveLocationPage clickRemoveButton(){
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[2]")));
 	    driver.findElement(By.xpath("//button[2]")).click();
-	    return new RemovePageLocation(driver);
-	}*/
+	    return new RemoveLocationPage(driver);
+	}
 	public AddLocationTab clickAddLocationButton(){
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(AddLocationButton));
 		driver.findElement(AddLocationButton).click();

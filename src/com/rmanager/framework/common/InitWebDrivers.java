@@ -1,5 +1,7 @@
 package com.rmanager.framework.common;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,7 +20,6 @@ public class InitWebDrivers {
 		   private InitWebDrivers(){
 			   		   
 		   }
-
 		   //Get the only object available
 		   public static InitWebDrivers getInstance(){
 		      return instance;
@@ -28,6 +29,7 @@ public class InitWebDrivers {
 			   if(driver == null){
 				   driver = new FirefoxDriver();
 				   driver.manage().window().maximize();
+				   driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			   }
 		      return driver;
 		   }
@@ -36,6 +38,7 @@ public class InitWebDrivers {
 				   System.setProperty("webdriver.chrome.driver", PropertyAppConfig.getPathChromeNavigator() );			 	
 				   driver = new ChromeDriver();   
 				   driver.manage().window().maximize();
+				   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			   }
 			   return driver;
 		   }

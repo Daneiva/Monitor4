@@ -1,15 +1,11 @@
 package com.rmanager.test.admin;
 
 import static org.junit.Assert.fail;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
 import com.rmanager.framework.common.InitWebDrivers;
 import com.rmanager.framework.pages.admin.login.LoginPage;
 import com.rmanager.framework.properties.appConfig;
@@ -17,7 +13,7 @@ import com.rmanager.framework.properties.appConfig;
 public class VerifyAccessLoginPage {
 	  //variables a utilizar
       private WebDriver driver;	  
-	  private boolean acceptNextAlert = true;
+
 	  private StringBuffer verificationErrors = new StringBuffer();
 	  private appConfig PropertyAppConfig =  new appConfig();	 
 	@BeforeTest

@@ -4,22 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.rmanager.test.*;
 
-import com.rmanager.framework.models.admin.locations.AddLocationInfo;
-import com.rmanager.framework.pages.admin.home.HomePage;
+import com.rmanager.framework.models.admin.locations.AddLocationInfoModel;
 
 public class AddLocationTab {
 	
 	WebDriver driver;	
 	
-	By txtName = AddLocationInfo.TXTBOX_NAME;
-	By txtDisplayName = AddLocationInfo.TXTBOX_DISPLAYNAME;
-	By txtDescription= AddLocationInfo.TXTBOX_DESCRIPTION;
-	By bttnSave=AddLocationInfo.BUTTON_SAVE;
-	By bttnCancel=AddLocationInfo.BUTTON_CANCEL;
-
-		
+	By txtName = AddLocationInfoModel.TXTBOX_NAME;
+	By txtDisplayName = AddLocationInfoModel.TXTBOX_DISPLAYNAME;
+	By txtDescription= AddLocationInfoModel.TXTBOX_DESCRIPTION;
+	By bttnSave=AddLocationInfoModel.BUTTON_SAVE;
+	By bttnCancel=AddLocationInfoModel.BUTTON_CANCEL;	
 	
 	public AddLocationTab(WebDriver driver){
 		this.driver =driver;
@@ -41,13 +37,11 @@ public class AddLocationTab {
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtDescription));
 		//driver.findElement(txtDescription).clear();
 		driver.findElement(txtDescription).sendKeys(Description);
-	}
+	}	
 	
-	public HomePage clickButtonSaveLocation(){
+	public LocationPage clickButtonSaveLocation(){
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(bttnSave));
 		driver.findElement(bttnSave).click();				
-		return new HomePage(driver);
-	}
-	
-	
+		return new LocationPage(driver);
+	}	
 }

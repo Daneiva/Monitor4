@@ -10,3 +10,305 @@
 2015-06-12 19:25:17,231 [main] INFO TestCreateLocation - LoginPage Opened
 2015-06-12 19:28:41,848 [main] INFO TestCreateLocation - Browser Opened
 2015-06-12 19:28:41,856 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-12 19:47:16,147 [main] INFO TestCreateLocation - Browser Opened
+2015-06-12 19:47:16,147 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 09:39:06,574 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 09:39:06,669 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 09:39:55,768 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 09:39:55,776 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 09:40:45,722 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 09:40:45,732 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 09:41:26,339 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 09:41:26,348 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 09:42:20,791 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 09:42:20,800 [main] INFO TestCreateLocation - LoginPage Opened
+2015-06-15 14:54:01,168 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 14:54:01,177 [main] INFO TestCreateLocation - Login Page Opened
+2015-06-15 14:54:01,420 [main] INFO TestCreateLocation - Home Page Opened
+2015-06-15 14:54:07,330 [main] INFO TestCreateLocation - Location Page Opened
+2015-06-15 14:54:08,660 [main] INFO TestCreateLocation - Location Tab Opened
+2015-06-15 15:04:18,875 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 15:04:18,881 [main] INFO TestCreateLocation - Login Page Opened
+2015-06-15 15:04:18,987 [main] INFO TestCreateLocation - Home Page Opened
+2015-06-15 15:04:19,353 [main] INFO TestCreateLocation - Location Page Opened
+2015-06-15 15:04:20,582 [main] INFO TestCreateLocation - Location Tab Opened
+2015-06-15 15:17:38,179 [main] INFO TestCreateLocation - Browser Opened
+2015-06-15 15:17:38,184 [main] INFO TestCreateLocation - Login Page Opened
+2015-06-15 15:17:38,273 [main] INFO TestCreateLocation - Home Page Opened
+2015-06-15 15:17:38,539 [main] INFO TestCreateLocation - Location Page Opened
+2015-06-15 15:17:40,311 [main] INFO TestCreateLocation - Location Tab Opened
+2015-06-15 18:53:37,005 [main] INFO Test Create Location - Browser Opened
+2015-06-15 18:53:37,013 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 18:53:37,749 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 18:53:39,107 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 18:53:40,023 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 18:53:40,671 [main] INFO Test Create Location - Set name location
+2015-06-15 18:53:40,852 [main] INFO Test Create Location - Set name location
+2015-06-15 18:53:41,119 [main] INFO Test Create Location - Set Display name location
+2015-06-15 18:53:41,809 [main] INFO Test Create Location - Set Description location
+2015-06-15 18:53:42,113 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 18:53:44,548 [main] INFO Test Create Location - Refresh the page
+2015-06-15 18:53:51,811 [main] INFO Test Create Location - Location created exists: false
+2015-06-15 18:53:54,235 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 18:53:54,642 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 18:55:18,253 [main] INFO Test Create Location - Browser Opened
+2015-06-15 18:55:18,267 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 18:55:18,712 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 18:55:20,732 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 18:55:21,664 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 18:55:21,795 [main] INFO Test Create Location - Set name location
+2015-06-15 18:55:22,219 [main] INFO Test Create Location - Set name location
+2015-06-15 18:55:22,994 [main] INFO Test Create Location - Set Display name location
+2015-06-15 18:55:23,819 [main] INFO Test Create Location - Set Description location
+2015-06-15 18:55:23,994 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 18:56:41,610 [main] INFO Test Create Location - Browser Opened
+2015-06-15 18:56:41,618 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 18:56:41,797 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 18:56:44,820 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 18:56:46,802 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 18:56:47,065 [main] INFO Test Create Location - Set name location
+2015-06-15 18:56:47,304 [main] INFO Test Create Location - Set name location
+2015-06-15 18:56:48,095 [main] INFO Test Create Location - Set Display name location
+2015-06-15 18:56:48,382 [main] INFO Test Create Location - Set Description location
+2015-06-15 18:56:48,656 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 18:56:50,898 [main] INFO Test Create Location - Refresh the page
+2015-06-15 18:56:55,904 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 18:56:55,919 [main] INFO Test Create Location - Assert location If created
+2015-06-15 18:56:57,602 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 18:56:58,691 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 18:58:29,730 [main] INFO Test Create Location - Browser Opened
+2015-06-15 18:58:29,750 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 18:58:29,873 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 18:58:32,417 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 18:58:33,578 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 18:58:33,769 [main] INFO Test Create Location - Set name location
+2015-06-15 18:58:33,993 [main] INFO Test Create Location - Set name location
+2015-06-15 18:58:34,636 [main] INFO Test Create Location - Set Display name location
+2015-06-15 18:58:34,972 [main] INFO Test Create Location - Set Description location
+2015-06-15 18:58:35,127 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 18:59:01,680 [main] INFO Test Create Location - Refresh the page
+2015-06-15 18:59:07,451 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 18:59:09,997 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:02:06,134 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:03:00,184 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:03:00,200 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:03:00,509 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:03:02,043 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:03:03,494 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:03:03,807 [main] INFO Test Create Location - Set name location
+2015-06-15 19:03:03,992 [main] INFO Test Create Location - Set name location
+2015-06-15 19:03:04,513 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:03:04,900 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:03:05,316 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:03:15,332 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:03:24,287 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:03:31,414 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:05:48,050 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:05:48,069 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:05:48,216 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:05:49,966 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:05:51,050 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:05:51,179 [main] INFO Test Create Location - Set name location
+2015-06-15 19:05:51,642 [main] INFO Test Create Location - Set name location
+2015-06-15 19:05:51,833 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:05:52,099 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:05:52,569 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:07:33,165 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:07:33,181 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:07:33,518 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:07:35,716 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:07:36,431 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:07:36,616 [main] INFO Test Create Location - Set name location
+2015-06-15 19:07:36,811 [main] INFO Test Create Location - Set name location
+2015-06-15 19:07:36,999 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:07:37,243 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:07:37,707 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:07:39,707 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:07:39,762 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:07:39,764 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:07:39,871 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:08:36,929 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:08:36,944 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:08:37,583 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:08:37,989 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:08:38,922 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:08:39,060 [main] INFO Test Create Location - Set name location
+2015-06-15 19:08:39,250 [main] INFO Test Create Location - Set name location
+2015-06-15 19:08:39,609 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:08:39,884 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:08:40,016 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:08:41,826 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:08:42,388 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:08:42,390 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:08:42,514 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:11:00,083 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:11:00,096 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:11:00,771 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:11:08,809 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:11:09,866 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:11:10,702 [main] INFO Test Create Location - Set name location
+2015-06-15 19:11:10,854 [main] INFO Test Create Location - Set name location
+2015-06-15 19:11:11,090 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:11:11,319 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:11:11,931 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:11:13,962 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:11:14,085 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:11:14,085 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:11:14,596 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:11:14,911 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:11:14,947 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:12:06,796 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:12:06,808 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:12:07,095 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:12:08,944 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:12:09,710 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:12:09,985 [main] INFO Test Create Location - Set name location
+2015-06-15 19:12:10,148 [main] INFO Test Create Location - Set name location
+2015-06-15 19:12:10,619 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:12:10,995 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:12:11,161 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:12:12,929 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:12:13,643 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:12:13,643 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:12:13,737 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:12:14,610 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:12:14,663 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:14:09,846 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:14:09,860 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:14:10,474 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:14:12,086 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:14:12,994 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:14:13,554 [main] INFO Test Create Location - Set name location
+2015-06-15 19:14:13,727 [main] INFO Test Create Location - Set name location
+2015-06-15 19:14:13,964 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:14:14,701 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:14:14,928 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:14:16,832 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:14:16,938 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:14:16,940 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:14:17,143 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:15:26,639 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:15:32,656 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:19:34,231 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:19:34,244 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:19:34,364 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:19:36,916 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:19:37,523 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:19:37,645 [main] INFO Test Create Location - Set name location
+2015-06-15 19:19:37,791 [main] INFO Test Create Location - Set name location
+2015-06-15 19:19:38,039 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:19:38,769 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:19:38,907 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:19:40,393 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:19:40,814 [main] INFO Test Create Location - Location created exists: false
+2015-06-15 19:19:40,929 [main] INFO After Test: Delete location created - Location created exists: false
+2015-06-15 19:19:41,174 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:19:43,630 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 19:19:43,630 [main] INFO After Test: Delete location created - Location created exists: false
+2015-06-15 19:31:29,710 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:31:29,793 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:31:30,613 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:31:31,098 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:31:32,239 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:31:32,432 [main] INFO Test Create Location - Set name location
+2015-06-15 19:31:32,838 [main] INFO Test Create Location - Set name location
+2015-06-15 19:31:33,123 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:31:33,674 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:31:33,846 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:31:35,332 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:31:35,861 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:31:35,863 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:31:35,991 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:31:45,515 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:31:45,532 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:31:45,972 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:31:47,498 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:31:48,902 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:31:49,731 [main] INFO Test Create Location - Set name location
+2015-06-15 19:31:50,563 [main] INFO Test Create Location - Set name location
+2015-06-15 19:31:51,950 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:31:53,024 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:31:53,424 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:31:57,064 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:31:58,701 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:31:58,703 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:31:58,946 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:32:10,586 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:32:41,323 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 19:32:42,689 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:33:49,941 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:33:49,955 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:33:50,519 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:33:54,046 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:33:55,101 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:33:55,858 [main] INFO Test Create Location - Set name location
+2015-06-15 19:33:56,034 [main] INFO Test Create Location - Set name location
+2015-06-15 19:33:56,522 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:33:56,951 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:33:57,454 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:33:59,448 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:33:59,565 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:33:59,567 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:33:59,695 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:35:11,275 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:35:11,295 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:35:12,568 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:35:21,806 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:35:23,006 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:35:23,206 [main] INFO Test Create Location - Set name location
+2015-06-15 19:35:23,340 [main] INFO Test Create Location - Set name location
+2015-06-15 19:35:23,795 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:35:24,565 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:35:24,737 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:35:27,618 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:35:27,789 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:35:27,805 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:35:28,506 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:35:29,410 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:35:29,412 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:35:29,841 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:35:30,480 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:35:32,052 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:35:32,324 [main] INFO Test Create Location - Set name location
+2015-06-15 19:35:32,413 [main] INFO Test Create Location - Set name location
+2015-06-15 19:35:32,557 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:35:32,875 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:35:33,009 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:35:36,777 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:35:38,253 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:35:38,255 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:35:38,495 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:39:54,758 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:39:54,773 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:39:55,021 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:39:56,162 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:39:57,063 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:39:57,592 [main] INFO Test Create Location - Set name location
+2015-06-15 19:39:57,767 [main] INFO Test Create Location - Set name location
+2015-06-15 19:39:58,131 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:39:58,830 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:39:58,989 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:40:02,638 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:40:02,770 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:40:02,770 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:40:02,895 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:40:24,427 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:40:32,493 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 19:40:34,407 [main] INFO After Test: Delete location created - Location created exists: false
+2015-06-15 19:42:25,116 [main] INFO Test Create Location - Browser Opened
+2015-06-15 19:42:25,128 [main] INFO Test Create Location - Login Page Opened
+2015-06-15 19:42:25,305 [main] INFO Test Create Location - Home Page Opened
+2015-06-15 19:42:26,546 [main] INFO Test Create Location - Location Page Opened
+2015-06-15 19:42:27,700 [main] INFO Test Create Location - Location add Tab Opened
+2015-06-15 19:42:27,989 [main] INFO Test Create Location - Set name location
+2015-06-15 19:42:28,213 [main] INFO Test Create Location - Set name location
+2015-06-15 19:42:28,867 [main] INFO Test Create Location - Set Display name location
+2015-06-15 19:42:29,137 [main] INFO Test Create Location - Set Description location
+2015-06-15 19:42:29,370 [main] INFO Test Create Location - Click Button Save location
+2015-06-15 19:42:32,177 [main] INFO Test Create Location - Refresh the page
+2015-06-15 19:42:32,278 [main] INFO Test Create Location - Location created exists: true
+2015-06-15 19:42:32,281 [main] INFO Test Create Location - Assert location If created
+2015-06-15 19:42:32,402 [main] INFO After Test: Delete location created - Location created exists: true
+2015-06-15 19:42:32,879 [main] INFO After Test: Delete location created - clickButtonRemoveLocation
+2015-06-15 19:42:36,788 [main] INFO After Test: Delete location created - Refresh the page
+2015-06-15 19:42:36,789 [main] INFO After Test: Delete location created - Location created exists: true
