@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Test Suite: Locations">
+<suite name="TestSuite-Locations" parallel="false"> 
 
 <listeners>
-<listener class-name="org.uncommons.reportng.HTMLReporter"/>
-<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-<listener class-name="com.rmanager.framework.common.Listener"></listener>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name="com.rmanager.framework.common.Listener"/>
 </listeners>
 
-   <test name="Verify created location">
+   <test name="Verifycreatedlocation">
     <classes>
-
-      <class name="com.rmanager.test.admin.VerifyAccessLoginPage" />
+      
+      <class name="com.rmanager.test.locations.TestUpdateLocation"/>
       <class name="com.rmanager.test.locations.TestCreateLocation"/>
+      <class name="com.rmanager.test.locations.TestDeleteLocation"/>
     </classes>
-  </test>
-  
- 
+  </test> 
 </suite>    
