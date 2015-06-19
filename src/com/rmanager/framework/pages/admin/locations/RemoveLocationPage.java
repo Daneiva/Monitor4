@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.rmanager.framework.common.LoggerManager;
 import com.rmanager.framework.models.admin.locations.RemoveLocationModel;
-import com.rmanager.framework.pages.admin.home.HomePage;
 
 public class RemoveLocationPage {
 
@@ -17,13 +17,15 @@ public class RemoveLocationPage {
 	By buttonCancel = RemoveLocationModel.BUTTON_CANCEL;
 	By cornerCancel = RemoveLocationModel.CORNER_CANCEL;
 	
-public RemoveLocationPage (WebDriver driver){
-	this.driver = driver;
-}
-public LocationPage clickButtonRemoveLocation(){
-(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(buttonRemove));
-driver.findElement(buttonRemove).click();				
-return new LocationPage(driver);
-}
+	public RemoveLocationPage (WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public LocationPage clickButtonRemoveLocation(){
+	(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(buttonRemove));
+	driver.findElement(buttonRemove).click();
+	LoggerManager.info("Was Clicking Confirm Remove Button Location");
+	return new LocationPage(driver);
+	}
 
 }

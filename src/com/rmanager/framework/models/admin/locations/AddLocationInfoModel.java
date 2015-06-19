@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 public interface AddLocationInfoModel {
 
-	By TXTBOX_NAME= By.xpath("//input");
-	By TXTBOX_DISPLAYNAME= By.xpath("//div[2]/input");
+	By TXTBOX_NAME= By.id("location-add-name");
+	By TXTBOX_DISPLAYNAME= By.id("location-add-display-name");
 	By XX_PARENTLOCATION= By.xpath("");
 	By TXTBOX_DESCRIPTION= By.xpath("//textarea");
 	By BUTTON_SAVE= By.xpath("//button[2]");

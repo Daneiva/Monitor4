@@ -44,6 +44,7 @@ public class appConfig {
 		return properties.getProperty("password");	
 	}
 	public String getPathChromeNavigator(){
+		System.out.println(properties.getProperty("crhomepathnavigator"));
 		return properties.getProperty("crhomepathnavigator");
 	}
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.rmanager.framework.common.LoggerManager;
 import com.rmanager.framework.models.admin.locations.AddLocationInfoModel;
 
 public class AddLocationTab {
@@ -21,27 +22,32 @@ public class AddLocationTab {
 		this.driver =driver;
 	}
 	
-	public void setNameLocation(String Name){			
-		new WebDriverWait(driver,100).until(ExpectedConditions.presenceOfElementLocated(txtName));
-		//driver.findElement(txtName).clear();
+	public void setNameLocation(String Name){		
+		
+		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtName));
+		driver.findElement(txtName).clear();
 		driver.findElement(txtName).sendKeys(Name);
-	}
-	
+		LoggerManager.info("Set <Name location> by: " +Name);
+	}	
 	public void setDisplayNameLocation(String DisplayName){			
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtDisplayName));
-		//driver.findElement(txtDisplayName).clear();
+		driver.findElement(txtDisplayName).clear();
 		driver.findElement(txtDisplayName).sendKeys(DisplayName);
+		LoggerManager.info("Set <Display Name location> by: " +DisplayName);
 	}	
 	
 	public void setDescriptionLocation(String Description){		
 		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtDescription));
-		//driver.findElement(txtDescription).clear();
+		driver.findElement(txtDescription).clear();
 		driver.findElement(txtDescription).sendKeys(Description);
+		LoggerManager.info("Set <Description location> by: " +Description);
 	}	
 	
 	public LocationPage clickButtonSaveLocation(){
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(bttnSave));
-		driver.findElement(bttnSave).click();				
+		driver.findElement(bttnSave).click();
+		LoggerManager.info("Was clicking in the Save Button");
 		return new LocationPage(driver);
+		
 	}	
 }

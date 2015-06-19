@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.rmanager.framework.common.LoggerManager;
 import com.rmanager.framework.pages.admin.home.HomePage;
 
 public class LoginPage {
@@ -17,9 +18,10 @@ public class LoginPage {
 		this.driver =driver;
 	}	
 	public HomePage clickLoginButton(){
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button")));
+		
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(loginButton));
-		driver.findElement(loginButton).click();				
+		driver.findElement(loginButton).click();	
+		LoggerManager.info("Was clicked on the Login Button in the Home Page");
 		return new HomePage(driver);
 	}
 }
