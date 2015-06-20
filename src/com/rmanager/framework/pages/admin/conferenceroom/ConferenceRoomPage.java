@@ -20,6 +20,7 @@ public class ConferenceRoomPage {
 	By TitleTableRooms = ConferenceRoomPageModel.TITLE_TABLE_ROOMS;
 	//By RoomNameInList = ConferenceRoomPageModel.ROOM_NAME_IN_LIST;
 	By List = ConferenceRoomPageModel.LIST_ROOM;
+	By SubList = ConferenceRoomPageModel.SUBLIST_ROOM;
 	
 	public ConferenceRoomPage(WebDriver driver){
 		
@@ -80,9 +81,7 @@ public class ConferenceRoomPage {
 	}
 	public void test(){
 		WebElement padre = driver.findElement(By.xpath("//div[@id='roomsGrid']/div[2]/div"));
-		
 		List<WebElement> hijos = padre.findElements(By.xpath("div"));
-		
 		
 		for(WebElement room:hijos ){
 			room.findElement(By.xpath("div/div[2]/div/div/div/span")).click();

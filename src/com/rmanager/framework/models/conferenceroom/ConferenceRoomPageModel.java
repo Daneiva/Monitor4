@@ -14,6 +14,7 @@ public interface ConferenceRoomPageModel {
 	By TITLE_TABLE_ROOMS = By.cssSelector("div.ngGroupPanelDescription.ng-binding");
 	//By ROOM_NAME_IN_LIST = By.ByClassName("");
 	By LIST_ROOM = By.xpath("//div[@id='roomsGrid']/div[2]/div");
+	By SUBLIST_ROOM =By.xpath("div");
 	
 }
 

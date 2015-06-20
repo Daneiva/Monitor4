@@ -19,7 +19,7 @@ public class LoginPage {
 	}	
 	public HomePage clickLoginButton(){
 		
-		(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(loginButton));
+		(new WebDriverWait(driver,60)).until(ExpectedConditions.elementToBeClickable(loginButton));
 		driver.findElement(loginButton).click();	
 		LoggerManager.info("Was clicked on the Login Button in the Home Page");
 		return new HomePage(driver);

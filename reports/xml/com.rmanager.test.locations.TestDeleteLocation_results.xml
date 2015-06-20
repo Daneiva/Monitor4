@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verifycreatedlocation2"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.621">
+  <properties />
+  
+  
+            <testcase name="DeleteLocation" time="4.621" classname="com.rmanager.test.locations.TestDeleteLocation" />
+      
+</testsuite>

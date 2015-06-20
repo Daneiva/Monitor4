@@ -17,12 +17,12 @@ import com.rmanager.framework.pages.admin.locations.AddLocationTab;
 import com.rmanager.framework.pages.admin.locations.LocationPage;
 import com.rmanager.framework.pages.admin.locations.RemoveLocationPage;
 import com.rmanager.framework.pages.admin.login.LoginPage;
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 public class TestUpdateLocation {
 	
 	  private WebDriver driver;	  
-	  private appConfig PropertyAppConfig =  new appConfig();
+	  private AppConfig PropertyAppConfig =  new AppConfig();
 	  private boolean locationIfPresent;	
 	  
 	  /*Variables for created*/	  
@@ -37,13 +37,14 @@ public class TestUpdateLocation {
 	  String descriptionUpdateLocation = "description"+ nameUpdateLocation;
 	 
 	  @BeforeTest
-	  public void setUp() throws Exception {		
+	  public void before() throws Exception {		
 	
 		  LoggerManager.info("Test Update Location <Before, Should be created a Locattion> ");
 
 		  /*Steps*/	
 		  
-		  driver.get(PropertyAppConfig.getUrlAdmin());		  
+		  driver.get(PropertyAppConfig.getUrlAdmin());
+		  driver.navigate().refresh();	
 		  LoginPage loginPage = new LoginPage(driver);		 
 		  HomePage homePage = loginPage.clickLoginButton();	  
 		  LocationPage locationPage= homePage.clickLocationButton();	 
@@ -56,17 +57,17 @@ public class TestUpdateLocation {
 		  /*Refresh the page*/
 		  driver.navigate().refresh();	
 		  LoggerManager.info("Refresh the page");	
-		  /*Find the location created*/
-		  locationIfPresent = locationPage.getLocationByName(nameLocation); 		  
+		   		  
 	  }	 
   @Test
   public void UpdateLocation() throws InterruptedException {
 	 
 	  LoggerManager.info("Test Update Location");
 	  
-	  /*Steps*/ 	     
-	  /*Find the location for updated*/
+	  
 	  LocationPage locationPage  =  new LocationPage(driver);
+	  /*Steps*/	  
+	  /*Find the location for updated*/
 	  locationIfPresent = locationPage.getLocationByName(nameLocation);
 		  
 	  if(locationIfPresent = true){
@@ -85,7 +86,7 @@ public class TestUpdateLocation {
 	  LoggerManager.info(nameUpdateLocation+ "<= Location updated exists: "+ locationIfPresent);
 	  /*Asserts*/	  
 	  Assert.assertTrue( locationIfPresent,msgError );
-	  LoggerManager.info("Assert <location: " + nameUpdateLocation+ "> was updated!");
+	  LoggerManager.info("Assert Test Update <Location: " + nameUpdateLocation+ "> was updated!");
 	  
 	  /*Refresh the page*/
 	  driver.navigate().refresh();	
@@ -114,13 +115,13 @@ public class TestUpdateLocation {
 			  /*Refresh the page*/
 			  driver.navigate().refresh();	
 			  LoggerManager.info("Refresh the page");
-			  LoggerManager.info("Location created exists: "+ locationIfPresent);	  
+			  LoggerManager.info("Location created exists: "+ locationIfPresent + " Is deleted(Ok!)!!");	  
 	  }
 	  else 
 	  {
 			  driver.navigate().refresh();	
 			  LoggerManager.info("Refresh the page");
-			  LoggerManager.info("Location created exists: "+ locationIfPresent);	  
+			  LoggerManager.info("Location created exists: "+ locationIfPresent+ "Is not deleted(NOK!)");	  
 	  }
 	
   }

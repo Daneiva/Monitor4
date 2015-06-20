@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
  
-public class appConfig {
+public class AppConfig {
 
 	Properties properties = new Properties();
 	InputStream propertyFile = null;
 	
-	public appConfig(){
+	public AppConfig(){
 		properties = new Properties();		
 			try {		 
 				propertyFile = new FileInputStream("config/rmanager.properties");
@@ -34,6 +34,12 @@ public class appConfig {
 	public String getUrlAdmin(){
 		return properties.getProperty("adminUrl");
 	}
+	public String getRoomSelected(){
+		return properties.getProperty("roomSelected");
+	}
+	public String getRoomSelected1(){
+		return properties.getProperty("roomSelected");
+	}
 	public String getUrlTablet(){
 		return properties.getProperty("tabletURl");
 	}
@@ -44,7 +50,6 @@ public class appConfig {
 		return properties.getProperty("password");	
 	}
 	public String getPathChromeNavigator(){
-		System.out.println(properties.getProperty("crhomepathnavigator"));
 		return properties.getProperty("crhomepathnavigator");
 	}
 }

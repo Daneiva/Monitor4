@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verify created location"
-           tests="1"
+           tests="3"
            failures="0"
            errors="0"
-           skipped="0"
-           time="9.297">
+           skipped="3"
+           time="0.001">
   <properties />
   
+            <testcase name="setUp" time="0.0" classname="com.rmanager.test.admin.VerifyAccessLoginPage">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="com.rmanager.test.admin.VerifyAccessLoginPage">
+          <skipped />
+    </testcase>
+            <testcase name="methodLoginPage" time="0.0" classname="com.rmanager.test.admin.VerifyAccessLoginPage">
+          <skipped />
+    </testcase>
   
-            <testcase name="methodLoginPage" time="9.297" classname="com.rmanager.test.admin.VerifyAccessLoginPage" />
-      
+  
 </testsuite>

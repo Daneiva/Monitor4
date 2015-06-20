@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verify created location"
+<testsuite name="Verifycreatedlocation1"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="9.562">
+           time="8.060">
   <properties />
   
   
-            <testcase name="CreateLocation" time="9.562" classname="com.rmanager.test.locations.TestCreateLocation" />
+            <testcase name="CreateLocation" time="8.060" classname="com.rmanager.test.locations.TestCreateLocation" />
       
 </testsuite>

@@ -16,11 +16,11 @@ import com.rmanager.framework.pages.admin.conferenceroom.ConferenceRoomPage;
 import com.rmanager.framework.pages.admin.conferenceroom.RoomInfoPage;
 import com.rmanager.framework.pages.admin.home.HomePage;
 import com.rmanager.framework.pages.admin.login.LoginPage;
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 public class TestUpdateInfoRoom {
 	  private WebDriver driver;	  
-	  private appConfig PropertyAppConfig =  new appConfig();
+	  private AppConfig PropertyAppConfig =  new AppConfig();
 	  
 	  String roomSelected =  "SM-Room7";//,"SM-Room8","SM-Room6","SM-Room1","SM-Room10","SM-Room11","SM-Room12","SM-Room13";
 	 
@@ -34,18 +34,15 @@ public class TestUpdateInfoRoom {
 		/*Variables*/
 		String randomCapacity = Integer.toString(Value.nextInt(999)+1);// between 1 and 999, more 1.
 		String randomCode = "Code-" + randomCapacity;
-		String displayNameRoom = "Room Info Update";
-		
-	  @BeforeTest
-	  public void setUp() throws Exception {	
-		  
-	  }	  
+		String displayNameRoom = "Room Info Update"; 
 	  
 	  @Test
 	  public void testUpdateInfoRoom() {
 		  LoggerManager.info("Test Update Info Room <After, > ");
 		  /*Steps*/	 
 		  driver.get(PropertyAppConfig.getUrlAdmin());
+		  driver.navigate().refresh();	
+		  
 		  LoginPage loginPage = new LoginPage(driver);
 			 
 		  HomePage homePage = loginPage.clickLoginButton();
@@ -76,8 +73,7 @@ public class TestUpdateInfoRoom {
 	 
 	  boolean ifRoomUpdatedExist = conferenceRoomPage.getRoomByName(roomSelected);
 	  LoggerManager.info("The original Display Name of room is = "+ ifRoomUpdatedExist);
-  }
-  
+  }  
   @BeforeSuite
   public void seBeforeSuitetUp() throws Exception {	  
 	  driver  =  InitWebDrivers.getChromeDriver();
@@ -86,16 +82,4 @@ public class TestUpdateInfoRoom {
   public void AfterSuite() throws Exception{	  
 	  driver.quit();
   }
-
-  private String generateRandomString(int size){
-      char[] chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-      StringBuilder sb = new StringBuilder();
-      Random random = new Random();
-      for (int counter = 0; counter < size; counter++) {
-          char character = chars[random.nextInt(chars.length)];
-          sb.append(character);
-      }
-      return sb.toString();
-}
-
 }

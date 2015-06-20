@@ -11,5 +11,5 @@ public interface OutOfOrderPageModel {
 	By END_AM_PM_OUT_OF_ORDER= By.xpath("(//button[@type='button'])[105]");
 	By TITLE_OUT_OF_ORDER = By.xpath("(//input[@type='text'])[9]");
 	By DESCRIPTIOM_OUT_OF_ORDER = By.xpath("//textarea");
-	By SAVE_BUTTON_OUT_OF_ORDER = By.cssSelector("css=button.info");
+	By SAVE_BUTTON_OUT_OF_ORDER = By.xpath("//div[3]/div[2]/button");
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 public class InitWebDrivers {
 	
@@ -15,7 +15,7 @@ public class InitWebDrivers {
 		
 	 	//create an object of SingleObject
 		private static InitWebDrivers instance = new InitWebDrivers();
-		private static appConfig PropertyAppConfig =  new appConfig();	
+		private static AppConfig PropertyAppConfig =  new AppConfig();	
 		public static WebDriver driver;
 
 		   //make the constructor private so that this class cannot be

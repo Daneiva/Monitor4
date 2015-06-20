@@ -2,6 +2,7 @@ package com.rmanager.framework.pages.admin.conferenceroom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,7 +26,10 @@ public class RoomInfoPage {
 	}
 	public OutOfOrderPage clickLinkOutOfOrder(){
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.presenceOfElementLocated(linkOutOfOrder));
-		driver.findElement(linkOutOfOrder).click();
+		driver.findElement(linkOutOfOrder);
+		WebElement link = (new WebDriverWait(driver,60)).until(ExpectedConditions.elementToBeClickable(linkOutOfOrder));
+		driver.findElement(linkOutOfOrder);
+		link.click();
 		LoggerManager.info("Was clicking in the link: Out Of Order Planning");
 		
 		return new OutOfOrderPage(driver);
@@ -44,8 +48,10 @@ public class RoomInfoPage {
 		return new ConferenceRoomPage(driver); 
 	}
 	public String getDisplayNameRoom(){
-		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtBoxDisplayNameRoom));
-		String getNameRoom = (driver.findElement(txtBoxDisplayNameRoom).getText());
+		WebElement textFieldDisplayNameRoom = new WebDriverWait(driver,60).
+				until(ExpectedConditions.presenceOfElementLocated(txtBoxDisplayNameRoom));
+		String getNameRoom = textFieldDisplayNameRoom.getAttribute("Value");
+		LoggerManager.info("Display Name Room Subject: <" + getNameRoom+ ">");
 		return getNameRoom ;
 	}
 	public void setDisplayNameRoom(String DisplayNameRoom){
@@ -55,8 +61,10 @@ public class RoomInfoPage {
 		LoggerManager.info("Set <Display Name - Room> by: " +DisplayNameRoom);
 	}
 	public String getCodeRoom(){
-		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtBoxCodeRoom));
-		String getCodeRoom = (driver.findElement(txtBoxCodeRoom).getText());
+		WebElement textFieldCodeRoom = new WebDriverWait(driver,60).
+				until(ExpectedConditions.presenceOfElementLocated(txtBoxCodeRoom));
+		String getCodeRoom = textFieldCodeRoom.getAttribute("Value");
+		LoggerManager.info("Code Subject: <" + getCodeRoom+ ">");
 		return getCodeRoom ;
 	}
 	public void setCodeRoom(String CodeRoom){
@@ -66,8 +74,10 @@ public class RoomInfoPage {
 		LoggerManager.info("Set <Code- Room> by: " +CodeRoom);
 	}
 	public String getCapacityRoom(){
-		new WebDriverWait(driver,60).until(ExpectedConditions.presenceOfElementLocated(txtBoxCapacityRoom));			
-		String getCapacityRoom = (driver.findElement(txtBoxCapacityRoom).getText());
+		WebElement textFieldCapacityRoom = new WebDriverWait(driver,60).
+				until(ExpectedConditions.presenceOfElementLocated(txtBoxCapacityRoom));			
+		String getCapacityRoom = textFieldCapacityRoom.getAttribute("Value");
+		LoggerManager.info("Capacity Subject: <" + getCapacityRoom + ">");
 		return getCapacityRoom ;
 	}
 	public void setCapacityRoom(String CapacityRoom){

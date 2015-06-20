@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.rmanager.test.locations.TestCreateLocation">
+      <class name="com.rmanager.test.conferencerooms.TestUpdateOutOfOrder">
         <methods>
-          <include name="CreateLocation"/>
-          <include name="setUp"/>
+          <include name="BeforeTest"/>
+          <include name="AfterSuite"/>
+          <include name="seBeforeSuitetUp"/>
+          <include name="TestUpdatOutOfOrder"/>
         </methods>
-      </class> <!-- com.rmanager.test.locations.TestCreateLocation -->
+      </class> <!-- com.rmanager.test.conferencerooms.TestUpdateOutOfOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

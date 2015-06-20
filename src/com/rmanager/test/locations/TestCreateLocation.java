@@ -15,7 +15,7 @@ import com.rmanager.framework.pages.admin.locations.AddLocationTab;
 import com.rmanager.framework.pages.admin.locations.LocationPage;
 import com.rmanager.framework.pages.admin.locations.RemoveLocationPage;
 import com.rmanager.framework.pages.admin.login.LoginPage;
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -23,7 +23,8 @@ import org.apache.log4j.PropertyConfigurator;
 public class TestCreateLocation {
 	
 	  private WebDriver driver;	  
-	  private appConfig PropertyAppConfig =  new appConfig();
+	  private AppConfig PropertyAppConfig =  new AppConfig();
+	  
 	  private boolean locationIfPresent;	  
 	  
 	  /*Variables*/
@@ -36,10 +37,10 @@ public class TestCreateLocation {
 	  public void CreateLocation()throws InterruptedException {
 	  
 	  LoggerManager.info("Test Create Location");	 
-
 		
 	  /*Steps*/	 
 	  driver.get(PropertyAppConfig.getUrlAdmin());
+	  driver.navigate().refresh();	
 	  
 	  LoginPage loginPage = new LoginPage(driver);
 	 
@@ -59,7 +60,7 @@ public class TestCreateLocation {
 	  
 	  /*Asserts*/	  
 	  Assert.assertTrue( locationIfPresent,msgError );
-	  LoggerManager.info("Assert <location: " + nameLocation + "> was created!");
+	  LoggerManager.info("Assert Test Create Location<location created is: " + nameLocation + "> was created!");
 	  /*Refresh the page*/
 	  driver.navigate().refresh();	
 	  LoggerManager.info("Refresh the page - Test Create Location");
@@ -68,7 +69,7 @@ public class TestCreateLocation {
 	  @AfterTest
 	  public void tearDown() throws Exception {
 		  
-		  LoggerManager.info("Test Create Location <After, Should be deleted a Locattion> ");
+		  LoggerManager.info("Test Create Location <After Test, Should be deleted a Locattion> ");
 		 	 
 		  /*Find the location created*/
 		  LocationPage locationPage  =  new LocationPage(driver);
@@ -85,14 +86,14 @@ public class TestCreateLocation {
 				  
 				  /*Refresh the page*/
 				  driver.navigate().refresh();	
-				  LoggerManager.info("Refresh the page");
-				  LoggerManager.info("Location created exists: "+ locationIfPresent);	  
+				  LoggerManager.info("Refresh the page, ");
+				  LoggerManager.info("Location created exists: "+ locationIfPresent+ " Is deleted(Ok!)!!");	  
 		  }
 		  else 
 		  {
 				  driver.navigate().refresh();	
 				  LoggerManager.info("Refresh the page");
-				  LoggerManager.info("Location created exists: "+ locationIfPresent);	  
+				  LoggerManager.info("Location created exists: "+ locationIfPresent+ "Is not deleted(NOK!)");	  
 		  }
 	  }
   @BeforeSuite

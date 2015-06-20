@@ -8,14 +8,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import com.rmanager.framework.common.InitWebDrivers;
 import com.rmanager.framework.pages.admin.login.LoginPage;
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 public class VerifyAccessLoginPage {
 	  //variables a utilizar
       private WebDriver driver;	  
 
 	  private StringBuffer verificationErrors = new StringBuffer();
-	  private appConfig PropertyAppConfig =  new appConfig();	 
+	  private AppConfig PropertyAppConfig =  new AppConfig();	 
 	@BeforeTest
 	  public void setUp() throws Exception {		
 		

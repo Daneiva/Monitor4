@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite-Locations]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.rmanager.framework.common.Listener"/>
+  </listeners>
+  <test name="Verifycreatedlocation1(failed)">
+    <classes>
+      <class name="com.rmanager.test.locations.TestUpdateLocation">
+        <methods>
+          <include name="seBeforeSuitetUp"/>
+          <include name="tearDown"/>
+          <include name="before"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestUpdateLocation -->
+      <class name="com.rmanager.test.locations.TestDeleteLocation">
+        <methods>
+          <include name="seBeforeSuitetUp"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestDeleteLocation -->
+      <class name="com.rmanager.test.locations.TestCreateLocation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="seBeforeSuitetUp"/>
+          <include name="CreateLocation"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestCreateLocation -->
+    </classes>
+  </test> <!-- Verifycreatedlocation1(failed) -->
+  <test name="Verifycreatedlocation2(failed)">
+    <classes>
+      <class name="com.rmanager.test.locations.TestUpdateLocation">
+        <methods>
+          <include name="seBeforeSuitetUp"/>
+          <include name="tearDown"/>
+          <include name="before"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestUpdateLocation -->
+      <class name="com.rmanager.test.locations.TestDeleteLocation">
+        <methods>
+          <include name="seBeforeSuitetUp"/>
+          <include name="DeleteLocation"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestDeleteLocation -->
+      <class name="com.rmanager.test.locations.TestCreateLocation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="seBeforeSuitetUp"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.rmanager.test.locations.TestCreateLocation -->
+    </classes>
+  </test> <!-- Verifycreatedlocation2(failed) -->
+</suite> <!-- Failed suite [TestSuite-Locations] -->

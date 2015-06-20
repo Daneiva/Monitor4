@@ -16,12 +16,12 @@ import com.rmanager.framework.pages.admin.locations.AddLocationTab;
 import com.rmanager.framework.pages.admin.locations.LocationPage;
 import com.rmanager.framework.pages.admin.locations.RemoveLocationPage;
 import com.rmanager.framework.pages.admin.login.LoginPage;
-import com.rmanager.framework.properties.appConfig;
+import com.rmanager.framework.properties.AppConfig;
 
 public class TestDeleteLocation {
 	
 	  private WebDriver driver;	  
-	  private appConfig PropertyAppConfig =  new appConfig();
+	  private AppConfig PropertyAppConfig =  new AppConfig();
 	  private boolean locationIfPresent;	
 	  
 	  /*Variables*/
@@ -31,12 +31,13 @@ public class TestDeleteLocation {
 	  String msgError= "The location: " + nameLocation + " was not deleted";
 	  
   @BeforeTest
-  public void setUp() throws Exception {		
+  public void BeforeTest() throws Exception {		
 	
-	LoggerManager.info("Test Delete Location <After, Should be created a Locattion> ");
+	LoggerManager.info("Test Delete Location <Before, Should be created a Locattion> ");
 	
 	  /*Steps*/	 
 	  driver.get(PropertyAppConfig.getUrlAdmin());
+	  driver.navigate().refresh();	
 	  
 	  LoginPage loginPage = new LoginPage(driver);
 	 
@@ -54,9 +55,10 @@ public class TestDeleteLocation {
   @Test
   public void DeleteLocation()throws InterruptedException {
 	  
-	  LoggerManager.info("Test Delete Location");	  
-	
-	  /*Steps*/		  
+	  LoggerManager.info("Test Delete Location");	
+	  
+	  /*Steps*/	  
+	  /*Find the location for updated*/
 	  LocationPage locationPage=  new LocationPage(driver); 	 
 	  /*Find the location for deleted*/
 	  locationIfPresent = locationPage.getLocationByName(nameLocation);	      
@@ -71,11 +73,12 @@ public class TestDeleteLocation {
 		  LoggerManager.info("Refresh the page");
 		  locationIfPresent = locationPage.getLocationByName(nameLocation);	  
 		  
-		  /*Asserts*/	
-		 
+		  /*Asserts*/			 
 		  Assert.assertFalse( locationIfPresent, msgError );
-		  LoggerManager.info("Assert <location: " + nameLocation + "> was deleted!");
-		  
+		  LoggerManager.info("Assert Test Deleted <Location: " + nameLocation + "> was deleted!");
+		  /*Refresh the page*/
+		  driver.navigate().refresh();	
+		  LoggerManager.info("Refresh the page - Test Delete Location");
   }
   @BeforeSuite
   public void seBeforeSuitetUp() throws Exception {	  
